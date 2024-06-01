@@ -1,5 +1,8 @@
+// Create a variable to hold your NFTs
 let nftCollection = [];
-
+// This function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata,
+// and store it in the variable above.
 function mintNFT(animal_name, eyeColor, breed, weight) {
     const nft = {
         animal_name: animal_name,
@@ -31,4 +34,5 @@ mintNFT("Tiger", "Brown", "Bengal", "150-200");
 
 listNFTs();
 
+// Get the total supply of NFTs
 console.log(`Total NFTs minted: ${getTotalSupply()}`);
